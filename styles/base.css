@@ -1,0 +1,141 @@
+:root {
+    --primary: #0b3d2e;
+    --secondary: #1f7a4d;
+    --accent: #f2b33d;
+    --light: #f7f7f2;
+    --text: #222222;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text);
+    background-color: var(--light);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 1rem 0;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 4px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary);
+    color: #ffffff;
+    border-bottom-color: var(--accent);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    font-family: var(--heading-font);
+    color: var(--primary);
+    text-align: center;
+    margin: 1rem 0 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    background-color: var(--secondary);
+    color: #ffffff;
+    margin: 0;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto 0;
+    display: block;
+    border-radius: 4px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+
+.card li {
+    padding: 0.4rem 0;
+}
+
+.card a {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.card a:hover {
+    color: var(--primary);
+}
+
+.card p {
+    margin: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
