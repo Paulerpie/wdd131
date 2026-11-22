@@ -87,6 +87,7 @@ figure img {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 0.5rem;
     border-radius: 4px;
 }
 
@@ -101,10 +102,6 @@ figure h2 {
 figure p {
     margin-bottom: 0.25rem;
     font-size: 0.95rem;
-}
-
-figure img {
-    margin-top: 0.5rem;
 }
 
 footer {
